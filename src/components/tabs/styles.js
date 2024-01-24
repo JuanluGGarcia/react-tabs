@@ -19,7 +19,7 @@ const StyledTab = styled.li`
     border: 1px solid black;
     /* Si $active es true le ponemos el color lightcoral a la pestaña si no le ponemos gray */
     background-color: ${({$active}) => ($active ? 'lightcoral' : 'gray')};
-    color: blue;
+    color: ${({$active}) => ($active ? '#FFF' : 'darkgray')};
     cursor: pointer;
 `;
 
