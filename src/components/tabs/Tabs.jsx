@@ -1,18 +1,25 @@
-import { v4 } from "uuid";
+// import { v4 } from "uuid";
+import { TABS } from "../../constants/tabs";
+import { TABSINFO } from "../../constants/tabsInfo";
 import { StyledList, StyledTab, StyledTabsContainer } from "./styles";
 import { useState } from "react";
 
+
 // const tabs = ['Tab 1', 'Tab 2', 'Tab 3'];
 
-// Con esto evitamos llamar en cada interacción a v4, sólo lo llamamos una vez
-const tabs = [
-    { id: v4(), tabName: 'Tab 1' },
-    { id: v4(), tabName: 'Tab 2' },
-    { id: v4(), tabName: 'Tab 3' }
-    
-];
 
-const tabsInfo = ['Info 1', 'Info 2', 'Info 3'];
+// Tanto tabs como tabsInfo me los he llevado a constantes para ver que funcionan correctamente, y si funciona correctamente 
+
+
+// Con esto evitamos llamar en cada interacción a v4, sólo lo llamamos una vez
+// const tabs = [
+//     { id: v4(), tabName: 'Tab 1' },
+//     { id: v4(), tabName: 'Tab 2' },
+//     { id: v4(), tabName: 'Tab 3' }
+    
+// ];
+
+// const tabsInfo = ['Info 1', 'Info 2', 'Info 3'];
 
 
 
@@ -25,7 +32,7 @@ const Tabs = () => {
             <StyledTabsContainer>
                 <StyledList>
                     
-                    {tabs.map((tab, index) => {
+                    {TABS.map((tab, index) => {
 
                         return (
 
@@ -49,7 +56,7 @@ const Tabs = () => {
 
                 </StyledList>
             </StyledTabsContainer>
-            <p>{tabsInfo[tabActive]}</p>
+            <p>{TABSINFO[tabActive]}</p>
         </>
         
     );

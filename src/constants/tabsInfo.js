@@ -1,0 +1,1 @@
+export const TABSINFO = ['Info 1', 'Info 2', 'Info 3'];
