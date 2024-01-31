@@ -1,0 +1,1 @@
+export const BUTTONSINFO = ['button 1', 'button 2', 'button 3'];

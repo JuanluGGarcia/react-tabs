@@ -1,3 +1,4 @@
+import Buttons from "./components/buttons/Buttons";
 import Tabs from "./components/tabs/Tabs";
 
 const App = () => {
@@ -5,6 +6,7 @@ const App = () => {
 		<>
 			<h1>Cómo hacer tabs</h1>
 			<Tabs />
+			<Buttons />
 		</>
 		
 	) 
